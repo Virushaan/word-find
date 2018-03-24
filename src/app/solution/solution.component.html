@@ -1,0 +1,12 @@
+<table class="table table-bordered">
+  <tr>
+    <th>Word</th>
+    <th>Start</th>
+    <th>End</th>
+  </tr>
+  <tr *ngFor="let word of finalWords">
+    <td>{{ word.word }}</td>
+    <td>{{ word.start }}</td>
+    <td>{{ word.end }}</td>
+  </tr>
+</table>

@@ -1,0 +1,10 @@
+<input [(ngModel)]="word" type="text">
+<button class="btn" (click)="onClick();" type="button">Add</button>
+<br>
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let word of words">
+    {{ word}}
+    <button type="button" class="btn float-right" (click)="removeWord(word)">x</button>
+  </li>
+</ul>
